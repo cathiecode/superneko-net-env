@@ -85,7 +85,7 @@ services:
       - MEILI_NO_ANALYTICS=true
       - MEILI_ENV=production
     env_file:
-      - .config/meilisearch.env
+      - ./src/meilisearch.env
     networks:
       - internal_network
     volumes:
