@@ -2,7 +2,7 @@ version: "3"
 
 services:
   web:
-    image: ghcr.io/cathiecode/superneko.net:sha256:03814deef2e16ed7bce8c7df8fbf415eb861f35bb94db685c1fbc24953a41e37
+    image: ghcr.io/cathiecode/superneko.net@sha256:55fe7f162b6851bab8e0a69e92a15eb23899a87495f67da81a0639b9d396c952
     restart: always
     links:
       - db
