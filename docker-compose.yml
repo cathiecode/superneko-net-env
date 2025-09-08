@@ -78,18 +78,18 @@ services:
       - ./www:/var/www/html
       - ./src/crond/crontabs:/etc/crontabs:ro
 
-  meilisearch:
-    restart: always
-    image: getmeili/meilisearch:v1.3.4
-    environment:
-      - MEILI_NO_ANALYTICS=true
-      - MEILI_ENV=production
-    env_file:
-      - ./src/meilisearch.env
-    networks:
-      - internal_network
-    volumes:
-      - ./meili_data:/meili_data
+#  meilisearch:
+#    restart: always
+#    image: getmeili/meilisearch:v1.3.4
+#    environment:
+#      - MEILI_NO_ANALYTICS=true
+#      - MEILI_ENV=production
+#    env_file:
+#      - ./src/meilisearch.env
+#    networks:
+#      - internal_network
+#    volumes:
+#      - ./meili_data:/meili_data
 
 networks:
   internal_network:
