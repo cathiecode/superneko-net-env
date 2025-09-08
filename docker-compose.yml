@@ -7,7 +7,7 @@ services:
     links:
       - db
       - redis
-      - meilisearch
+#      - meilisearch
     depends_on:
       db:
         condition: service_healthy
